@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'pepin'
+
+list = $stdin.read.split($/)
+
+$stdin.reopen '/dev/tty'
+
+puts Pepin.search(list)
