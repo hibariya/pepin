@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['hibariya']
   spec.email         = ['hibariya@gmail.com']
 
-  spec.summary       = %q{Interactive filtering tool for CLI.}
+  spec.summary       = %q{Interactive filtering tool for CLI written in Ruby.}
   spec.homepage      = 'https://github.com/hibariya/pepin'
   spec.license       = 'MIT'
 

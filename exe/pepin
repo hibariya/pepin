@@ -4,6 +4,7 @@ require 'pepin'
 
 list = $stdin.read.split($/)
 
+# FIXME Pepin responds to SIGWINCH but this command can't handle window size
 $stdin.reopen '/dev/tty'
 
 puts Pepin.search(list)
