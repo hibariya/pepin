@@ -1,5 +1,7 @@
 # Pepin
 
+[![Build Status](https://travis-ci.org/hibariya/pepin.svg?branch=master)](https://travis-ci.org/hibariya/pepin)
+
 Pepin is a Percol and Peco like, interactive filtering tool for CLI written in Ruby.
 `Pepin.search` Launches interactive window for filtering, and returns the filtered item.
 
