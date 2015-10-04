@@ -1,5 +1,3 @@
-require 'curses'
-
 describe Pepin::InteractiveSearch do
   describe '#search_interactive' do
     let(:searcher) { Pepin::InteractiveSearch.new(%w(aaa aab abb bbb bba baa), view: DummyView) }

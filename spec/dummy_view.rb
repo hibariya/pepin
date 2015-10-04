@@ -1,3 +1,5 @@
+require 'curses'
+
 class DummyView
   class << self
     attr_accessor :inputs
