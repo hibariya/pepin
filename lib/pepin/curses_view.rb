@@ -15,6 +15,8 @@ module Pepin
         @window = Curses::Window.new(height, width, y, x)
         @cursor = cursor_range.first
 
+        @window.keypad true
+
         @query.add_observer -> { render }, :call
       end
 
@@ -105,7 +107,6 @@ module Pepin
     def launch
       @window = Curses.init_screen
 
-      @window.keypad true
       Curses.raw
       Curses.noecho
 
