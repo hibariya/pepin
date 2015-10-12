@@ -27,6 +27,7 @@ module Pepin
           when Curses::KEY_CTRL_W                             then :handle_ctrl_w
           when Curses::KEY_CTRL_E                             then :handle_ctrl_e
           when Curses::KEY_CTRL_K                             then :handle_ctrl_k
+          when Curses::KEY_CTRL_U                             then :handle_ctrl_u
           when Curses::KEY_BACKSPACE, Curses::KEY_CTRL_H, 127 then :handle_backspace
           when Curses::KEY_CTRL_C                             then :handle_ctrl_c
           when Curses::KEY_CTRL_D                             then :handle_ctrl_d
@@ -73,6 +74,12 @@ module Pepin
 
     def handle_ctrl_k(*)
       query.delete_ahead_from view.cursor
+    end
+
+    def handle_ctrl_u(*)
+      query.delete_behind_from view.cursor
+
+      view.move_cursor_to_first
     end
 
     def handle_backspace(*)
