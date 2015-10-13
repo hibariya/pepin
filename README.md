@@ -5,6 +5,8 @@
 Pepin is a Percol and Peco like, interactive filtering tool for CLI written in Ruby.
 `Pepin.search` Launches interactive window for filtering, and returns the filtered item.
 
+![pepin example](https://cloud.githubusercontent.com/assets/43346/10299529/15627a4e-6c26-11e5-8e8e-fc74ea32371a.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
