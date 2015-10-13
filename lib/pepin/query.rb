@@ -34,6 +34,15 @@ module Pepin
       notify_change
     end
 
+    def delete_behind_from(pos)
+      string_was = @string
+      @string    = @string.to_s[pos..-1]
+
+      notify_change
+
+      string_was.length - @string.length
+    end
+
     def delete_behind_word_from(pos)
       string_was = @string
       @string    = @string[0..pos.pred].split(/\b/)[0...-1].join + @string[pos..-1]
